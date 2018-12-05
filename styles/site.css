@@ -1,0 +1,433 @@
+@import url("https://use.typekit.net/yal4aut.css");
+
+/* the styles for the elements */
+
+* {
+	margin: 0;
+    padding: 0;
+}
+
+/* the styles for the body */
+
+body {
+	font-family: museo-sans, Helvetica, sans-serif;
+	font-size: 100%;
+    color: rgb(140, 98, 57);
+    background-color: rgb(240, 229, 213);
+	margin: 0;
+    display: grid;
+    grid-template: repeat(6, auto) / 1fr;
+    grid-template-areas:
+        "header"
+        "beauty"
+        "specials"
+        "menu"
+        "story"
+        "foot";
+}
+
+/* the styles for the header */
+
+header{
+    grid-area: header;
+    display: grid;
+    grid-template: auto / 40% 1fr;
+    align-items: center;
+}
+header a#logo{
+    grid-column: 1 / 2;
+    padding: 1.25em 0 .25em 1.5em;
+}
+header a img{
+    width: 220px;
+}
+#navi ul{
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: flex-end;
+    align-content:flex-start;
+    list-style-type: none;
+}
+#navi ul li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 90%;
+    color: rgb(40, 18, 0);
+    padding: 0em 2em 0em;
+}
+
+/* the styles for the beauty section */
+
+#beauty{
+    grid-area: beauty;
+    display: flex;
+}
+#beautyphoto1{
+    width: 100%;
+    height: 100%;
+}
+
+/* the styles for the specials and events row*/
+
+#specialsrow{
+    grid-area: specials;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;    
+}
+#specialsrow p{
+    padding-bottom: 1em
+}
+#specialsrow a:link{
+    color: black;
+}
+#specialsrow a:visited{
+    color: black;
+}
+#fbrust{
+    width: 25px;
+    float: left;
+    padding-right: 10px;
+}
+#veterans{
+    width: 150px;
+    border-right: 1px solid rgb(140, 98, 57);
+    padding: 45px;
+    margin-right: 25px;  
+}
+#youtube{
+    width: 180px;
+    align-self: baseline;
+    padding: 45px 0 25px 25px;
+    border: none;
+}
+iframe{
+    border: none;
+    border-radius: 10px;
+}
+
+/* the styles for the menu and favorites */
+
+#menuandfavorites{
+    grid-area: menu;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    padding: 20px 50px;
+    margin-bottom: 20px;
+}
+#menutype{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: baseline;
+    padding-top: 20px;
+}
+.cookietypeorn{
+    height: 40px;
+}
+#menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-bottom: 1px solid rgb(140, 98, 57);
+}
+h1{
+    font-family: "cookie", cursive;
+    color: rgb(40, 18, 0);
+    font-weight: 300;
+    font-size: 170%;
+    border-top: 1px solid rgb(140, 98, 57);
+    padding-top: .5em;
+}
+h2{
+    color: rgb(40, 18, 0);
+    font-weight: 400;
+    font-size: 90%;
+    text-transform:uppercase;
+}
+.menulist{
+    display:flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+#menu ul{
+    flex-basis: 33%;
+    padding-top: 10px;
+}
+#menu li{
+    font-family: museo-sans-condensed, sans-serif;
+    font-weight: 300;
+    list-style: none;  
+}
+#menuandfavorites p{
+    font-family: museo-sans-condensed, sans-serif;
+    font-weight: 300;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+#coffeecup{
+    width: 100px;
+    border-radius: 7px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px
+}
+#premiumcoffee{
+    padding-top: 1em
+}
+#menuandfavorites a:link { 
+    color: rgb(140, 98, 57);
+    font-weight: 100;
+    font-size: 90%;
+}
+#menuandfavorites a:visited { 
+    color: rgb(140, 98, 57);
+    font-weight: 100;
+    font-size: 90%;
+}
+#bakeryfav{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 90px 1fr 1fr 1fr;
+    justify-items: center;
+    border-left: 1px solid rgb(140, 98, 57);
+    border-top: 1px solid rgb(140, 98, 57);
+        border-bottom: 1px solid rgb(140, 98, 57);
+}
+#bakeryribbon{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 220px;
+    padding-top: 10px
+}
+#bulls{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}
+#choc{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#pink{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#boston{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#cruller{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+#sugar{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+figure img{
+    width: 100px;
+    border-radius: 7px;
+    margin: 0 20px;
+}
+figcaption{
+    font-family: museo-sans-condensed, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+/* the styles for the story section */
+
+.storysection{
+    grid-area: story;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    grid-template-rows: 1fr;
+    margin-top: 40px;
+}
+.storyphoto{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    z-index: 1;
+}
+.storycopy{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;   z-index: 2;
+    padding: 50px 40px 0 0;
+}
+.storycopy p{
+    padding-bottom: 1em
+}
+
+/* the styles for the footer */
+
+footer {
+    grid-area: foot;
+    display: grid;
+    grid-template-columns: 1fr 1fr 320px;
+    grid-template-rows: repeat(5, auto);
+    padding: 2em 50px 2em;
+    color: white;
+    background-image: -moz-linear-gradient(to bottom, rgb(66,33,11) 0%, rgb(140,98,57) 30%, rgb(140,98,57) 100%);
+	background-image: -webkit-linear-gradient(to bottom, rgb(66,33,11) 0%, rgb(140,98,57) 30%, rgb(140,98,57) 100%);
+	background-image: -o-linear-gradient(to bottom, rgb(66,33,11) 0%, rgb(140,98,57) 30%, rgb(140,98,57) 100%);
+	background-image: linear-gradient(to bottom, rgb(66,33,11) 0%, rgb(140,98,57) 30%, rgb(140,98,57) 100%);
+    margin-top: -10px;
+    align-items: center;
+}
+#location{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-bottom: 1px solid rgb(240, 229, 213);
+    margin-top: 2px;
+}
+#location img{
+    padding-top: 20px;
+}
+footer a:link { 
+    color: rgb(240, 229, 213);
+    font-weight: 100;
+    font-size: 90%;
+}
+footer a:visited { 
+    color: rgb(240, 229, 213);
+    font-weight: 100;
+    font-size: 90%;
+}
+address{
+    font-style: normal;
+    margin-right: 50px;
+    padding-bottom: 1em;
+}
+#addresshours{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 50px;
+    padding-top: 30px;
+    align-self: flex-start;
+}
+#addresshours p{
+    margin-right: 50px;
+    padding-bottom: 1em;    
+}
+#social img{
+    width: 25px;
+}
+#social ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-top: -.5em;
+}
+#social ul li{
+    padding-right: 15px;
+}
+#googlemap{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-top: 30px;
+    padding-right: 0;
+    justify-self: end;
+}
+#getintouch{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-bottom: 1px solid rgb(240, 229, 213);
+    padding-top: 20px;
+}
+#feedbackcopy{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 30px;
+    align-self: flex-start
+}
+#form{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#copyright{
+    grid-row: 5/6;
+    grid-column: 1/3;
+}
+footer h3{
+    font-size: 100%;
+    font-weight: 700;
+    color: rgb(255,199,59);
+}
+#copyright{
+    font-size: 80%;
+    padding-top: 2em;
+}
+form{
+    padding-top: 30px;
+    justify-self: end;
+}
+label{
+    text-align: right;
+    font-size: 80%;
+    font-weight: 100;
+    padding-bottom: 1em;
+}
+input{
+    margin-bottom: 1em;
+    border-radius: 3px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: rgb(240, 229, 213);
+}
+#submit{
+    width: 6em;
+    height: 2em;
+    margin-left: 0;
+    margin-top: .5em;
+    background-color: rgb(255,199,59);
+    border: none;
+    font-size: 95%;
+    font-family: museo-sans-condensed, sans-serif;
+    color: rgb(140, 98, 57);
+}
