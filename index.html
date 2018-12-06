@@ -5,31 +5,14 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="donuts, coffee, urbana">
     <meta name="description" content="Donuts and Coffee in Downtown Urbana">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Donut Delights | Downtown Urbana</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/yal4aut.css">
+    <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/site.css">
-
-	<link href="jquery.bxslider.css" rel="stylesheet">
-   
-    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <script src="js/jquery.bxSlider.min.js"></script>
-    <!-- Call to the bxSlider function -->
-    <script>
-    	$(document).ready(function() {
-        	$("#slider").bxSlider({
-			  auto: true,
-			  autoControls: false,
-			  captions: false,
-			  minSlides: 2,
-			  maxSlides: 2,
-			  slideWidth: 250,
-			  slideMargin: 100
-			});
-    	});
-    </script>
    
 </head>
 
@@ -55,10 +38,44 @@
     </header>
     
     <main>
+<!-- html for the slider-->
+       
+<!--
         <div id="beauty">
                 <img id="beautyphoto1" src="images/beautyphoto1.png" alt="Hot and Fresh Donuts and Coffee">
   
         </div>
+-->
+        
+        <div class="beautyslider">
+
+        <div class="mySlides fade">
+          <img src="images/beautyphoto1.png" alt="donuts" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/beautyphoto2.png" alt="donuts and book club" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/beautyphoto3.png" alt="donuts and specials" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+  
+<!--  html for the specials and events-->
+              
+        
          <div id="specialsrow">
                 <div>
                     <img class="cookietypeorn" src="images/specialstype.png" alt="Specials">
@@ -69,10 +86,10 @@
                     </div>
                     
                     <div id="giffile">
-                        <img id="veterans" src="images/vetsAdSmall10.gif" alt="Vets Eat Free">
+                        <img id="veterans" src="images/vetsAdSmallloop.gif" alt="Vets Eat Free" width="280">
                     </div>
                     
-                <div>
+                <div id="eventcolumn">
                      <img class="cookietypeorn" src="images/eventstype.png" alt="Events">
                     <h2>Books at the Bakery</h2>
                     <p>Last Tuesday of the month<br> 2&colon;00&hyphen;3&colon;00 pm</p>
@@ -92,10 +109,13 @@
              </div>
              
          </div>
+
+<!--  html for the menu and favorites-->
+
           
         <div id="menuandfavorites"> 
 
-                <img id="menutype" class="cookietypeorn" src="images/menutype.png" alt="Menu">
+                <img id="menutype" class="cookietypeorn" src="images/menutype.png" alt="Menu" width="120">
                 
            <div id="menu"> 
 
@@ -149,8 +169,6 @@
                 
                 <p>We offer a wide selection of freshly ground premium varieties &mdash; medium to dark roasts and flavored coffees for every taste.</p>
                 
-                <p><a href="#top" id="menureturntop">Return to top</a></p>
-                
             </div> 
           
           <div id="bakeryfav">
@@ -186,28 +204,37 @@
                   <figcaption>Sugar Raised</figcaption>
                 </figure>               
           </div>
+          <div id="return">
+                <p><a href="#top" id="menureturntop">Return to top</a></p>
+          </div>
           </div>
           
           
-          <div class="storysection">
+
+            <div class="storysection">
              
-              <img class="storyphoto" src="images/storyphoto1.png" alt="Original storefront Donut Delights">
+              <img class="storyphoto" src="images/storyphotos1.png" alt="Original storefront Donut Delights">
               
               <div class="storycopy">
-                  <img class="cookietypeorn" id="storytype" src="images/storytype.png" alt="Our Story">
+                  <img class="cookietypeorn" id="storytype" src="images/storytype.png" alt="Our Story" width="120">
                   <p>Donut Delights founder, Melvin Furballski, was known far and wide in his homeland of Poland for his delicate pastries</p>
                   <p>In 1970, he fled to America in search of a better life for his family. Melvin landed in New York City and caught a bus heading west. An unexpected mechanical failure forced a three day delay in Urbana, Illinois where Melvin saw the need for a donut shop.  <span class="arrow">&gt;</span></p>
               </div>
-          </div>
+            </div>
+
+
+
 
     </main>
       
+<!--  html for the footer-->
+
     <footer>
       
           <div id="location">
            <p><a href="#top" id="returntop">Return to top</a></p>
            
-            <img class="cookietypeorn" id="locationtype" src="images/locationtype.png" alt="Location">
+            <img class="cookietypeorn" id="locationtype" src="images/locationtype.png" alt="Location" width="150">
             </div>
 
           <div id="addresshours">
@@ -253,10 +280,10 @@
 
 
           <div id="getintouch">
-              <img class="cookietypeorn" id="contact" src="images/touchtype.png" alt="Get in Touch">
+              <img class="cookietypeorn" id="contact" src="images/touchtype.png" alt="Get in Touch" width="200">
         </div>
              <div id="feedbackcopy">
-              <h3>Send us your feedback and get rewarded&excl;</h3>
+              <h3>Send us your feedback &amp; get rewarded&excl;</h3>
               <p>Get punch cards and coupons and subscribe <br>to our newsletter for the latest on our <br>seasonal offerings and special events.</p>
              </div>
              
@@ -270,6 +297,9 @@
                     
             <label for="email">Email</label><br>
                   <input type="email" id="email" name="_replyto">
+                              
+            <label for="comments">Comments</label><br>
+                  <input type="text" id="comments" name="comments">
                   
                   <input type="submit" id="submit" value="Send">
                 </form>
@@ -279,18 +309,40 @@
               <p> &copy; 2018 Donut Delights. All rights reserved.</p>
           </div>
           
-<!--
-             <form action="/action_page.php">
-              <label for="email">Email:</label>
-                  <input type="text" id="email"><br>
-                  
-              <label for="mobile">Mobile:</label>
-              <input type="text" id="mobile"> <br>
-              
-              <input type="submit" id="submit" value="Submit">
-              </form>
--->
     </footer> 
+    
+<!--  html for the scripts-->
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+   
+   
     
 <!-- Global Site Tag (gtag.js) - Google Analytics. Replace GA_TRACKING_ID twice with your tracking id.-->
 
