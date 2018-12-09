@@ -1,0 +1,24 @@
+/* THE TEAM */
+  Company: Jill Thomas Graphic Design
+  Website: NA
+  Contact: jillmthomas2@gmail.com
+
+  Project Manager, Lead Developer, Web Designer: Jill Thomas
+  Contact: jillmthomas2@gmail.com
+  Social Media: NA
+
+
+/* THANKS */
+  Photography: Dreamstime.com
+
+  Client Liason: Becky Ding
+  Website: parkland.edu
+  Contact: jding@parkland1.edu
+
+/* SITE DETAILS */
+  Client: Donut Delights
+  URL: https://jillmthomas.github.io/
+  Date Launched: 12.6.2018
+  Last Update: 12.6.2018
+  Doctype: HTML5, CSS3
+  IDE: Brackets, Photoshop, Illustrator
